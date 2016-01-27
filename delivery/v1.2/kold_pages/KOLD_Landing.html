@@ -1,0 +1,141 @@
+<!--#set var="navAd" value="Kold" -->
+
+<!--#include virtual="../kold_modules/base_layout/global-head.html" -->
+
+    <title>KOLD Landing Page</title>
+    
+    <!--#include virtual="../kold_modules/base_layout/global-styles.html" -->
+    
+    <!--[if (gt IE 8) | (IEMobile)]><!-->
+    <link rel="stylesheet" href="../library/css/kold_lp/index.css" type="text/css">   
+
+    <!--<![endif]--><!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="../library/css/kold_lp/index-full.css" type="text/css"> 
+
+    <![endif]-->
+    
+    <!--#include virtual="../kold_modules/base_layout/global-head-scripts.html" -->
+    <link rel="stylesheet" href="../library/css/modules/index-full.css" type="text/css"> 
+  </head>
+  <body id="skrollr-body" >
+    <!--#include virtual="../kold_modules/nav_ad/index.html" -->
+    <!--#include virtual="../kold_modules/nav/index.html" -->
+
+    <div class="row">
+
+		<div class="kold-landing kold modules medium-12 columns">
+
+			<div class="frame-one">
+				<img class="new-flag" src="../library/img/KOLD_Landing/new-flag.png">
+				<div id="crossfade">
+	                <img src="../library/img/KOLD_Landing/prelaunch_landing_drinkmaker_cocacola_img.png">
+	                <img src="../library/img/KOLD_Landing/prelaunch_landing_drinkmaker_drpepper_img.png">
+	                <img src="../library/img/KOLD_Landing/prelaunch_landing_drinkmaker_redbarn_img.png">
+	                <img src="../library/img/KOLD_Landing/prelaunch_landing_drinkmaker_sprite_img.png">
+	                <img src="../library/img/KOLD_Landing/prelaunch_landing_drinkmaker_tierneys_img.png">
+	                <img src="../library/img/KOLD_Landing/prelaunch_landing_drinkmaker_waterful_img.png">
+	            </div>
+				<h2 id="bethefirst">Be the first.<br/>Change the game.</h2>
+				<div id="hero-one-cta" class="cta-box" >
+					<img class="klogo" src="../library/img/KOLD_Landing/prelaunch_landing_kold_logo.png">
+					<p>Be the first to experience the new KEURIG<sup>®</sup> KOLD™. Make a Coca-Cola<sup>®</sup>. Make a Sprite<sup>®</sup>. Make ice-cold craft sodas, sports drinks, sparkling waters, iced teas, and more, at the push of a button.</p>
+					<button class="primary-cta-light">LEARN MORE</button>
+					<button class="primary-cta-light">PRE-ORDER NOW</button>
+				</div>
+
+				<div class="down-button"></div>
+
+			</div>
+
+			<div name="frame-two" class="frame-two" data-0="position:relative;" data-674="position:fixed;top:0;">
+				<div class="frame-two-holder">
+					<div class="cta-box column-6" data-200="opacity:1;" data-400="opacity:1;" data-2000="opacity:1" data-2100="opacity:0">
+						<h2>KOLD<sup>™</sup> pods: The secret to a fresh-made beverage.</h2>
+						<p>The innovative Karbonator™ beads in our KOLD<sup>™</sup> pods join forces with water to make your favorite beverages ice-cold, at the push of a button.</p>
+						<button class="primary-cta">EXPLORE ALL VARIETIES</button><br/>
+						<button class="primary-cta">LEARN ABOUT KOLD™ PODS</button>
+					</div>
+
+					<div class="drink-frame column-6" data-0="height:500px;" data-2600="height:500px;" data-3000="height:0px;">
+
+
+						<img class="glass" data-0="opacity:1;" data-474="opacity:1" data-874="opacity:1"  data-1074="opacity:0" src="../library/img/KOLD_Landing/prelaunch_landing_bev_cocacola_img.png">
+						<img class="cap" data-0="opacity:0;" data-974="opacity:0" data-1074="opacity:1" data-1474="opacity:1" data-1674="opacity:0" src="../library/img/KOLD_Landing/prelaunch_landing_bevpod_cocacola_img.png">
+						<img data-0="opacity:0;" data-1474="opacity:0" data-1674="opacity:1" src="../library/img/KOLD_Landing/images_6.jpg">
+
+					</div>
+				</div>
+				<div class="frame-three" data-0="top:0px;" data-2000="top:0px;" data-2300="top:-500px;" data-3500="top:-500px;"  data-4000="top:-2350px;">
+				
+					<img class="group-photo column-6" src="../library/img/KOLD_Landing/party.jpg">
+					
+					<div class="join-beta  column-6">
+						<div class="content-box">
+							<h2>Be the first to experience KEURIG<sup class="reg">®</sup> KOLD<sup>™</sup>.</h2>
+							<p>Join the Beta Tasters: a select few who get exclusive first access to KEURIG<sup class="reg">®</sup> KOLD<sup>™</sup>—and the opportunity to help us change the future of refreshment.</p>
+							<button class="primary-cta-light">JOIN & PREORDER NOW</button>
+						</div>
+					</div>
+
+
+					<div class="parallax-module-container">
+					<!--#include virtual="../kold_modules/videoplayer/index.html" -->
+					<!--#include virtual="../kold_modules/rtbs/index.html" -->
+
+					<!--#include virtual="../kold_modules/beta_CTA/index.html" -->
+					<!--#include virtual="../kold_modules/email_signup/index.html" -->
+
+
+					<!--#include virtual="../kold_modules/footer/index.html" -->
+					
+					</div>
+          
+				</div>
+
+			</div>
+	
+		</div>
+
+    </div>
+
+    
+    
+    <!--#include virtual="../kold_modules/base_layout/global-scripts.html" -->
+
+    <script src="../library/js/vendor/skrollr/skrollr.min.js"></script>
+    <script type="text/javascript">
+
+    	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+		    skrollr.init();
+		}
+
+
+    	$( '#bethefirst' ).delay(1500).animate({
+		    opacity:0
+		  }, 1500,'swing', function(){
+		  	 $('#hero-one-cta').animate({
+		  	 	opacity:1
+		  	 }, 1000,'swing', function(){
+		  	 	$('.down-button').animate({
+		  	 		marginTop:462
+		  	 	}, 500,'swing');
+		  	 })
+		  });
+
+
+		$('.down-button').on('click', function(){
+			scrollToAnchor('frame-two');
+		});
+
+		function scrollToAnchor(anchor){
+		    var aTag = $("div[name='"+anchor+"']");
+		    $('html,body').animate({
+		    	scrollTop: aTag.offset().top
+		    },1000,'swing');
+		}
+
+    </script>
+  </body>
+</html>
+
+

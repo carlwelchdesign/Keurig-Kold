@@ -1,0 +1,38 @@
+.hero-lp {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    img {
+        @include vertical-middle();
+        z-index: $hero-img;
+    }
+}
+.hero-lp-copy {
+    @include borderbox();
+    position: absolute;
+    z-index: $hero-copy;
+    color: white;
+    width: 50%;
+    margin: 0 25px 0;
+    @include vertical-middle();
+    &.copy-right {
+        right: 0;
+        margin: 0 50px 0 0;
+    }
+    h1 {
+        color: white;
+        @include fonts(35);
+        line-height: 35px;
+    }
+    h2 {
+        color: white;
+    }
+    p {
+        @include fonts(16);
+        margin-bottom: 0;
+    }
+    .primary-cta {
+        margin-top: 30px;
+        display: inline-block;
+    }
+}

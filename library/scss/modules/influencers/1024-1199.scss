@@ -1,0 +1,30 @@
+.influencers {
+	padding: 0;
+	.influencers-single {
+		h3 {
+			@include fonts(36);
+			line-height: 44px;
+		}
+		.quote {
+			@include fonts(200);
+			line-height: 100px;
+			height: 100px;
+		}
+	}
+	.influencers-double {
+		h3 {
+			@include fonts(22);
+			line-height: 28px;
+		}
+		.quote {
+			@include fonts(110);
+			font-family: $reader-regular;
+			color: $white;
+			opacity: 0.5;
+			position: relative;
+			top: 0;
+			line-height: 100px;
+			height: 100px;
+		}
+	}
+}

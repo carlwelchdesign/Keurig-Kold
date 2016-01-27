@@ -1,0 +1,178 @@
+footer {
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .contact-social {
+        @include clearfix();
+        background: $bluish-gray;
+        clear: both;
+        li,
+        a {
+            @include fonts(15);
+            color: lighten($light-blue, 10%);
+        }
+        li {
+            display: inline-block;
+            line-height: 54px;
+        }
+    }
+    .phone-num a,
+    .find-store a {
+        padding: 0 37px 0 20px;
+        background: transparent url($ph-icn) 0 50% no-repeat;
+    }
+    .find-store a {
+        background-image: url($location-icn);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .social-links {
+        a {
+            width: 40px;
+            height: 0;
+            padding-top: 17px;
+            overflow: hidden;
+            display: inline-block;
+            border-right: 1px solid $border-light-blue;
+        }
+        li:last-child a {
+            border-right: none;
+        }
+        .fb a {
+            background: transparent url($footer-fb) 50% 3px no-repeat;
+        }
+        .tw a {
+            background: transparent url($footer-tw) 50% 2px no-repeat;
+        }
+        .gp a {
+            background: transparent url($footer-gp) 50% 2px no-repeat;
+        }
+    }
+    h3 {
+        @include fonts(15);
+        font-family: $reader-regular;
+        color: lighten(black, 20%);
+        padding: 40px 0 30px;
+        margin: 0;
+    }
+    .country-selector h3 {
+        padding: 30px 0 20px;
+    }
+}
+.footer-links,
+.footer-form {
+    margin-top: 10px;
+}
+.footer-links li a {
+    @include fonts(15);
+    color: $light-bluish-gray;
+    position: relative;
+    padding-left: 15px;
+    display: inline-block;
+    &:before {
+        content: '>';
+        position: absolute;
+        left: 0;
+    }
+    &:hover {
+        color: $light-bluish-gray;
+        text-decoration: underline;
+    }
+}
+.footer-form p {
+    @include fonts(15);
+    color: $light-bluish-gray;
+}
+.join-mailing-list-form {
+    @include clearfix();
+    border-bottom: 1px solid #cfd4d9;
+    position: relative;
+    padding-bottom: 40px;
+    input[type=email],
+    button {
+        height: 38px;
+        padding: 0 17px;
+        font-family: $reader-regular;
+        @include fonts(15);
+        color: $bluish-gray;
+        @include border-radius(17px);
+        border: 1px solid #c3c3c3;
+    }
+    input[type=email] {
+        background-color: #f5f5f5;
+        @include placeholder-color( #b4bac1 );
+        width: 100%;
+        position: relative;
+    }
+    button {
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        float: right;
+        &:focus,
+        &:hover {
+            background-color: white;
+            color: $gray;
+        }
+    }
+    .error {
+        margin: 0 15px;
+        @include border-radius(0 0 8px 8px);
+    }
+}
+.country-selector {
+    select {
+        width: 115px;
+        @include remove-outlines();
+        background-color: white;
+        background-image: url($dropdown-arrow-orange);
+        color: $light-bluish-gray;
+    }
+    .select-country-form {
+        position: relative;
+        padding-left: 45px;
+        height: 35px;
+        div:before {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+        }
+        div.us-flag:before {
+            content: url($us-flag);
+            
+        }
+        div.ca-flag:before {
+            content: url($ca-flag);
+        }
+    }
+}
+.footer-copyright {
+    margin-top: 70px;
+    padding-top: 20px;
+    border-top: 1px solid $border-light-gray;
+    p,
+    ul,
+    li,
+    a {
+        display: inline-block;
+        @include fonts(13);
+        color: $light-bluish-gray;
+    }
+    p {
+        padding-right: 20px;
+    }
+    a:after {
+        content: '|';
+        padding-left: 10px;
+        margin-right: 5px;
+        color: #cfd4d9;
+    }
+    li:last-child a:after {
+        display: none;
+    }
+}

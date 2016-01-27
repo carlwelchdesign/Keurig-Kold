@@ -1,0 +1,87 @@
+.brand-promotion {
+	padding: 0;
+	.brand {
+		height: 469px;
+		p {
+			padding-top: 140px;
+			@include fonts (24);
+			font-family: $reader-regular;
+			color: $white;
+			line-height: 36px;
+		}
+	}
+	.pods-section {
+		height: 220px;
+		padding-top: 30px;
+		.brand-pod {
+			h3 {
+				@include fonts(16);
+				font-family: $reader-regular;
+				line-height: 23px;
+				color: $white;
+				padding-top: 10px;
+				width: 130px;
+				margin-left: -8px;
+			}
+			&:hover {
+				h3 {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+.flyte {
+	.brand {
+		background: url('../../../library/img/modules/brandpromotion/flyte-background.jpg') no-repeat 75% center;
+	}
+	.pods-section {
+		background-color: #ed2125;
+	}
+}
+.redbarn {
+	.brand {
+		background: url('../../../library/img/modules/brandpromotion/redbarn-background.jpg') no-repeat 75% center;
+	}
+	.pods-section {
+		background-color: #aa473d;
+	}
+}
+.flynns {
+	.brand {
+		background: url('../../../library/img/modules/brandpromotion/flynns-background.jpg') no-repeat 75% center;
+	}
+	.pods-section {
+		background-color: #E28331;
+	}
+}
+.seraphine {
+	.brand {
+		background: url('../../../library/img/modules/brandpromotion/seraphine-background.jpg') no-repeat 75% center;
+		p {
+			color: $off-black;
+		}
+	}
+	.pods-section {
+		background-color: #00adef;
+	}
+}
+.waterful {
+	.brand {
+		background: url('../../../library/img/modules/brandpromotion/waterful-background.jpg') no-repeat 75% center;
+		p {
+			color: $off-black;
+		}
+	}
+	.pods-section {
+		background-color: #693c8e;
+	}
+}
+.tierneys {
+	.brand {
+		background: url('../../../library/img/modules/brandpromotion/tierneys-background.jpg') no-repeat 75% center;
+	}
+	.pods-section {
+		background-color: #523629;
+	}
+}

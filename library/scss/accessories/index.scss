@@ -1,0 +1,20 @@
+// Configuration
+@import '../config/index.scss';
+
+// Dependencies
+@media screen and (min-width:768px) {
+    @import '745-1023.scss'
+}
+@media screen and (min-width:960px) {
+    @import '1024-1199.scss'
+}
+@media screen and (min-width:1200px) {
+    @import '1200.scss'
+}
+
+// Required components
+@import '../modules/email_signup/index.scss';
+@import '../modules/anchorlinks/index.scss';
+@import '../modules/beta_cta/index.scss';
+@import '../modules/beverages_pdp_hero/index.scss';
+@import '../modules/youll_also_like/index.scss';

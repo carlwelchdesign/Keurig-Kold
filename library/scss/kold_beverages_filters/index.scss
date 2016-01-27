@@ -1,0 +1,20 @@
+// Configuration
+@import '../config/index.scss';
+
+// Dependencies
+@media screen and (min-width:768px) {
+    @import '745-1023.scss'
+}
+@media screen and (min-width:960px) {
+    @import '1024-1199.scss'
+}
+@media screen and (min-width:1200px) {
+    @import '1200.scss'
+}
+
+// Required components
+@import '../modules/grid_hero/index.scss';
+@import '../modules/grid_filter_bar/index.scss';
+@import '../modules/grid_alert/index.scss';
+@import '../modules/grid_filter_side/index.scss';
+@import '../modules/grid_content/index.scss';

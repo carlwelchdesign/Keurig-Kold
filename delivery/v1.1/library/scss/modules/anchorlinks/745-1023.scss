@@ -1,0 +1,132 @@
+.anchor-links {
+	.sub-nav {
+		max-width: 1200px;
+		margin: 0 auto;
+		border-top: 1px solid $light-gray;
+		border-bottom: 1px solid $light-gray;
+		padding: 0;
+		height: 60px;
+		dd {
+			.reg-link {
+				height: 58px;
+				line-height: 58px;
+				width: 100%;
+				display: inline-block;
+				text-decoration: none;
+                text-align: center;
+				&:hover {
+					text-decoration: none;
+					color: $white;
+					background: $off-black;
+					border: none;
+				}
+				&:after {
+					content: none;
+				}
+			}
+			.animated-cta {
+				display: inline-block;
+				width: 0;
+				line-height: 58px;
+				height: 58px;
+				position: relative;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				white-space: nowrap;
+                border: none;
+				transition: width .4s linear;
+                font-weight: bold;
+				&:hover {
+					color: $white;
+					text-decoration: none;
+				}
+			}
+			&:first-child a:after {
+				content: none;
+			}
+			&.active {
+				background: $off-black;
+				color: $white;
+				.reg-link {
+					background: $off-black;
+					border: none;
+                    font-weight: bold;
+				}
+                a {
+                    @include border-radius(0);
+                    padding: 0;
+                }
+			}
+			a {
+			    @include fonts(15);
+			}
+		}
+	}
+	&.fixed {
+		padding: 0;
+		.sub-nav {
+			dd {
+				.animated-cta {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+	padding: 0;
+}
+.flexbox .anchor-links .sub-nav {
+    @include flex-display();
+    @include flex-flow(row wrap);
+    dd {
+        -ms-flex: auto;
+        flex: auto;
+        @include flex-grow(1);
+		&.columns {
+		    padding: 0;
+            width: auto;
+            position: static;
+		}
+        &.init-hide {
+            position: absolute;
+            left: -99999px;
+        }
+    }
+}
+.flexbox .anchor-links.fixed .sub-nav {
+    dd.init-hide {
+        position: static;
+        left: auto;
+    }
+}
+.ie9 .anchor-links .sub-nav {
+    display: table;
+    width: 100%;
+    dd {
+        float: none;
+        display: table-cell;
+        width: auto;
+        &.columns {
+            padding: 0;
+        }
+        &.init-hide {
+            display: none;
+        }
+    }
+}
+.ie9 .anchor-links.fixed .sub-nav {
+    dd a {
+        position: relative;
+        margin-top: -24px;
+    }
+    dd.init-hide {
+        display: table-cell;
+        top: 25px;
+        position: relative;
+        &.active {
+            background-color: white;
+        }
+    }
+}

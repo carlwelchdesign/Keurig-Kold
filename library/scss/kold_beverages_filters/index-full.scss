@@ -1,0 +1,15 @@
+// Configuration
+@import '../config/index.scss';
+
+// Dependencies
+
+@import '745-1023.scss';
+@import '1024-1199.scss';
+@import '1200.scss';
+
+// Required component
+@import '../modules/grid_hero/index-full.scss';
+@import '../modules/grid_filter_bar/index-full.scss';
+@import '../modules/grid_alert/index-full.scss';
+@import '../modules/grid_filter_side/index-full.scss';
+@import '../modules/grid_content/index-full.scss';

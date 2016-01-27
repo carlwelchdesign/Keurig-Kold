@@ -1,0 +1,272 @@
+$list-left-padding: calc-percent(270, 896);
+$tile-img-left-m: calc-percent(55, 896);
+
+$list-prod-name-width-m: calc-percent(220, $list-tile-width);
+$list-reg-price-width-m: calc-percent(95, $list-tile-width);
+$list-member-price-width-m: calc-percent(130, $list-tile-width);
+$list-prod-qty-width-m: calc-percent(141, $list-tile-width);
+
+$grid-prod-name-width-m: calc-percent(126, $grid-tile-width);
+$grid-reg-price-width-m: calc-percent(60, $grid-tile-width);
+$grid-member-price-width-m: calc-percent(60, $grid-tile-width);
+.grid-content {
+    background: $background-off-white;
+    padding-top: 15px;
+    h2,
+    h3,
+    p {
+        font-family: $reader-regular;
+        color: $dark-gray3;
+        padding: 0;
+    }
+    h2 {
+        @include fonts(10);
+        line-height: 12px;
+        margin: 0;
+    }
+    h3 {
+        @include fonts(18);
+        line-height: 20px;
+        margin: 0 0 15px;
+    }
+    p {
+        @include fonts(15);
+        line-height: 19px;
+        margin: 0 0 5px;
+    }
+    .star-rating {
+        width: 85px;
+        height: 0;
+        padding: 15px 0 0;
+        overflow: hidden;
+        background: transparent url($stars) 0 0 no-repeat;
+    }
+    .stars-5-0 {
+        background-position: 0 0;
+    }
+    .stars-4-5 {
+        background-position: 0 -15px;
+    }
+    .stars-4-0 {
+        background-position: 0 -30px;
+    }
+    .stars-3-5 {
+        background-position: 0 -45px;
+    }
+    .stars-3-0 {
+        background-position: 0 -60px;
+    }
+    .stars-2-5 {
+        background-position: 0 -75px;
+    }
+    .stars-2-0 {
+        background-position: 0 -90px;
+    }
+    .stars-1-5 {
+        background-position: 0 -105px;
+    }
+    .stars-1-0 {
+        background-position: 0 -120px;
+    }
+    .tile-desc {
+        margin-bottom: 25px;
+    }
+    .tile-discl p,
+    .tile-autodelivery p,
+    .tile-autodelivery a {
+        @include fonts(12);
+        line-height: 14px;
+        color: $dark-gray2;
+    }
+    button {
+        background: white;
+        border: 2px solid $off-black;
+        color: $off-black;
+        width: 100%;
+        @include fonts(15);
+        font-weight: 700;
+    }
+    .prod-name,
+    .prod-qty {
+        font-family: $reader-regular;
+    }
+    .reg-price,
+    .member-price {
+        font-family: $reader-medium;
+    }
+}
+.price-data {
+    ul {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        position: absolute;
+        @include vertical-middle();
+        color: $dark-gray3; 
+    }
+}
+.tile-autodelivery {
+    position: relative;
+    padding: 0 0 0 55px;
+    &:before {
+        width: 55px;
+        height: 42px;
+        content: url('../../../library/img/grid/autodelivery-icn.png');
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+    h4 {
+        color: $off-black;
+        @include fonts(16);
+        font-family: $reader-regular;
+        padding: 0;
+        margin: 0 0 5px;
+    }
+}
+.tile {
+    margin-bottom: 20px;
+}
+.tile-content {
+    background: white;
+    @include border-radius(5px);
+    position: relative;
+}
+.list-view {
+    .tile {
+        width: 100%;
+    }
+    .tile-content {
+        padding: 30px 30px 30px $list-left-padding;
+    }
+    .list-hide {
+        display: none;
+    }
+    .tile-img {
+        position: absolute;
+        left: $tile-img-left-m;
+        top: 58px;
+    }
+    h2 {
+        margin: 5px 0;
+    }
+    ul {
+        border-top: 1px solid $light-gray;
+    }
+    li {
+       @include fonts(17);
+    }
+    .price-legend {
+        height: 30px;
+        li {
+            @include fonts(13);
+            white-space: nowrap;
+        }
+    }
+    .price-row {
+        height: 52px;
+        li.member-price {
+            color: $dark-gray2;
+        }
+    }
+    .prod-name {
+        width: $list-prod-name-width-m;
+        left: 0;
+    }
+    .reg-price {
+        width: $list-reg-price-width-m;
+        left: $list-prod-name-width-m;
+    }
+    .member-price {
+        width: $list-member-price-width-m;
+        left: $list-reg-price-width-m + $list-prod-name-width-m;
+    }
+    .prod-qty {
+        width: $list-prod-qty-width-m;
+        left: $list-reg-price-width-m + $list-prod-name-width-m + $list-member-price-width-m;
+    }
+    sup {
+        top: 0.3em;
+        line-height: 0.3em;
+    }
+}
+.grid-view {
+    .tile {
+        @include borderbox();
+        width: 33.333%;
+        height: 470px;
+        float: left;
+        padding-right: 20px;
+        &:nth-child(3n) {
+            padding-right: 0;
+        }
+    }
+    .tile-content {
+        @include borderbox();
+        height: 100%;
+        padding: 70px 20px 20px;
+    }
+    .grid-hide {
+        display: none;
+    }
+    h2 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    h3 {
+        margin-top: 13px;
+        padding-top: 13px;
+        border-top: 1px solid $medium-gray;
+    }
+    button {
+        margin: 10px 0 0;
+    }
+    .tile-img {
+        text-align: center;
+        padding-bottom: 45px;
+    }
+    li {
+       @include fonts(14);
+    }
+    .price-legend {
+        height: 32px;
+        border-bottom: 1px solid $medium-gray;
+        li {
+            @include fonts(12);
+            line-height: 13px;
+        }
+    }
+    .price-row {
+        height: 20px;
+    }
+    .reg-price {
+        width: $grid-reg-price-width-m;
+        left: 0;
+    }
+    .member-price {
+        width: $grid-member-price-width-m;
+        left: $grid-reg-price-width-m;
+    }
+    .prod-name {
+        width: $grid-prod-name-width-m;
+        left: $grid-reg-price-width-m + $grid-member-price-width-m;
+        text-align: right;
+    }
+    .member-price {
+        color: $dark-gray2;
+    }
+    .price-add-btn {
+        width: -webkit-calc(100% - 40px);
+        width: calc(100% - 40px);
+        position: absolute;
+        bottom: 19px;
+    }
+}
+.grid-content .grid-view h3 {
+    margin-bottom: 10px;
+}

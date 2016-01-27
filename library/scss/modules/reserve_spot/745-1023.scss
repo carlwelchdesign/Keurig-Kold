@@ -1,0 +1,91 @@
+.reservespot {
+    h2,
+    .reserve-spot-intro {
+        text-align: center;
+
+        p{
+            color: $text-bluish-gray;
+        }
+    }
+    h2 {
+        @include fonts(36);
+    }
+    .color-pic-q,
+    label {
+        color: $text-bluish-gray;
+        @include fonts(16);
+        cursor: default;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    .reserve-spot-intro {
+        margin-bottom: 50px;
+        p {
+            padding: 0 205px 50px;
+        }
+        .img {
+            margin: 0 80px;
+            padding: 0;
+        }
+    }
+    form {
+        width: calc-percent(820, 1200);
+        margin: 0 auto;
+        li {
+            border-top: 1px solid $light-gray;
+            @include clearfix();
+            list-style: none;
+            padding: 20px 0;
+        }
+    }
+    .color-pic-q,
+    .color-pick {
+        float: left;
+    }
+    .color-pic-q {
+        width: 20%;
+    }
+    .color-pick {
+        width: 33.333%;
+        img {
+            max-width: 120px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        input[type=radio] + label {
+            margin: 0 0 0 40%;
+        }
+    }
+    .left-col,
+    .right-col {
+        width: 50%;
+        float: left;
+        margin-bottom: 0;
+    }
+    .right-col {
+        text-align: right;
+        float: right;
+    }
+    
+    .primary-cta {
+        margin-bottom: 10px;
+        float: right;
+        padding: 0 80px;
+    }
+    .terms-preorder {
+        display: block;
+        float: right;
+        clear: right;
+        width: 270px;
+        text-align: center;
+        @include fonts(16);
+        a {
+            color: $text-bluish-gray;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

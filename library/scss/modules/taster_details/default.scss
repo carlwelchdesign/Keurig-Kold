@@ -1,0 +1,48 @@
+.tasterdetails {
+    @include borderbox();
+    @include clearfix();
+    background: $off-white;
+    margin: 0 15px 25px;
+    padding: 22px 0;
+    width: auto;
+    .row {
+        margin: 0;
+    }
+    .columns {
+        padding: 0 15px;
+    }
+    h2 {
+        @include fonts(22);
+        line-height: 24px;
+        font-family: $reader-regular;
+        margin-bottom: 20px;
+    }
+    h2,
+    h3,
+    p {
+        padding-left: 100px;
+    }
+    h3,
+    p {
+        @include fonts(14);
+        line-height: 19px;
+    }
+    h3 {
+        font-family: $reader-medium;
+        font-weight: 700;
+        margin: 0 0 2px;
+    }
+    p {
+        font-family: $reader-regular;
+    }
+    p,
+    .taster-details-img {
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}
+.taster-details-img {
+    width: 80px;
+    margin-right: 20px;
+    float: left;
+}

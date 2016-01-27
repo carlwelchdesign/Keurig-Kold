@@ -1,0 +1,22 @@
+// Configuration
+@import '../config/index.scss';
+
+// Dependencies
+@media screen and (min-width:768px) {
+    @import '745-1023.scss'
+}
+@media screen and (min-width:960px) {
+    @import '1024-1199.scss'
+}
+@media screen and (min-width:1200px) {
+    @import '1200.scss'
+}
+
+// Required components
+@import '../modules/rtbs/index.scss';
+@import '../modules/support/index.scss';
+@import '../modules/techspecs/index.scss';
+@import '../modules/kold_landing/index.scss';
+@import '../modules/videoplayer/index.scss';
+@import '../modules/featured_beverages/index.scss';
+@import '../modules/beverages_row/index.scss';

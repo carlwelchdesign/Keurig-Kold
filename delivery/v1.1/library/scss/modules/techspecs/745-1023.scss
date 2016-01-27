@@ -1,0 +1,40 @@
+.techspecs {
+	background: $background-off-white;
+	h2 {
+		padding-bottom: 40px;
+		margin-bottom: 0;
+	}
+	h3 {
+		@include fonts(45);
+		color: $arctic-blue;
+		line-height: 48px;
+		font-family: $reader-medium;
+	}
+	h4 {
+		font-family: $reader-medium;
+		@include fonts(14);
+		line-height: 18px;
+		text-transform: uppercase;
+		color: $dark-gray1;
+	}
+	.specs-info {
+		margin-top: 10px;
+		li ul,
+		li ul li {
+			margin-left: 0;
+			padding-left: 0;
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
+		li p {
+			margin-bottom: 0;
+		}
+		.specs-line {
+			border-bottom: 1px solid $light-gray;
+			padding: 8px 0;
+		}
+	}
+	img {
+		margin-top: 10px;
+	}
+}

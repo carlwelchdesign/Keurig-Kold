@@ -1,0 +1,23 @@
+.tasterprogram {
+    p {
+        @include fonts(36);
+        line-height: 44px;
+    }
+    li a {
+        @include fonts(16);
+    }
+    li a:before {
+        padding-right: 10px;
+    }
+    .odd {
+        p,
+        ul {
+            padding: 0 80px 0 95px;
+        }
+    }
+    .even p,
+    .even ul,
+    .odd .img {
+        padding: 0 40px 0 100px;
+    }
+}

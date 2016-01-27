@@ -1,0 +1,103 @@
+.shop {
+	.facebook-link {
+		background: transparent url('../../../library/img/global/facebook.png');
+		width: 32px;
+		height: 32px;
+		display: block;
+		margin-bottom: 3px;
+	}
+	.twitter-link { 
+		background: transparent url('../../../library/img/global/twitter.png');
+		width: 32px;
+		height: 32px;
+		display: block;
+		margin-bottom: 3px;
+	}
+	.gplus-link {
+		background: transparent url('../../../library/img/global/gplus.png');
+		width: 32px;
+		height: 32px;
+		display: block;
+		margin-bottom: 3px;
+	}
+	.drinkmaker-pod {
+		@include fonts(10);
+		color: $off-black;
+		img {
+			margin-right: 8px;
+		}
+	}
+	h3 {
+		font-family: $reader-regular;
+		@include fonts(24);
+		color: $off-black;
+	}
+	h4 {
+		font-family: $reader-medium;
+		@include fonts(14);
+		color: $dark-gray1;
+	}
+	.readmore {
+		font-family: $reader;
+		@include fonts(14);
+		color: $dark-gray2;
+		text-decoration: underline;
+		display: block;
+		margin-top: -20px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.mixed-media-viewer {
+	padding: 0;
+	#s7viewer {
+		height: 456px !important;
+	}
+	#s7viewer_divSpinButton {
+		visibility: visible;
+	}
+	#s7viewer_fullScreenButton {
+		display: none;
+	}
+	.s7mixedmediaviewer .s7spinbuttons .s7panrightbutton,
+	.s7mixedmediaviewer .s7spinbuttons .s7panleftbutton  {
+		background-color: $light-gray;
+	}
+}
+.touch {
+	.mixed-media-viewer {
+		#s7viewer {
+			margin: 0 0 80px 0;
+		}
+		#s7viewer_spinLeftButton {
+			top: 100px;
+		}
+		#s7viewer_spinRightButton {
+			top: 100px;
+		}
+		#s7viewer_swatches {
+			bottom: -100px;
+		}
+		#s7viewer_setIndicator {
+			top: 450px !important;
+		}
+	}
+}
+.mixed-media-viewer {
+	#s7viewer {
+		margin: 15px 0 20px 0;
+	}
+	#s7viewer_spinLeftButton {
+		top: 25px;
+	}
+	#s7viewer_spinRightButton {
+		top: 25px;
+	}
+	#s7viewer_swatches {
+		bottom: -20px;
+	}
+	#s7viewer_setIndicator {
+		top: 325px !important;
+	}
+}

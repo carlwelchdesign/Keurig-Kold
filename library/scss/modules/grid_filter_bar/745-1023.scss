@@ -1,0 +1,67 @@
+.filter-bar {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid $bg-light-gray;
+    > .row {
+        height: 60px;
+        position: relative;
+    }
+}
+.grid-pagination,
+.grid-controls {
+    @include vertical-middle();
+    p {
+        display: inline-block;
+        margin: 0 15px 0 0;
+        color: $off-black;
+        @include fonts(14);
+    }
+}
+.grid-pagination a {
+    border-bottom: 1px solid $off-black;
+}
+.grid-controls {
+    right: 0;
+    text-align: right;
+    select {
+        margin: 0;
+        width: 205px;
+        @include border-radius(17px);
+        padding-left: 17px;
+        background-image: url($arrow-down-blue);
+        background-position: 94% center;
+    }
+}
+.grid-view-btns,
+.grid-filter-select {
+    display: inline-block;
+}
+.grid-view-btns {
+    border-right: 1px solid $bg-light-gray;
+    margin-right: 20px;
+}
+.grid-view-btn,
+.list-view-btn {
+    background: transparent url($filter-view-btns) 0 -19px no-repeat;
+    width: 22px;
+    height: 20px;
+    padding: 0;
+    margin: 0 10px 0 5px;
+    text-indent: -9999px;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: transparent;
+    }
+}
+.list-view-btn {
+    background-position: -21px -19px;
+    &:hover,
+    &.active {
+        background-position: -21px 0;
+    }
+}
+.grid-view-btn.active,
+.grid-view-btn:hover {
+    background-position: 0 0;
+}

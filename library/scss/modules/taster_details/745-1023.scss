@@ -1,0 +1,16 @@
+.tasterdetails {
+    background-color: $off-white;
+    text-align: center;
+    h2 {
+        @include fonts(36);
+    }
+    h3 {
+        @include fonts(16);
+        font-weight: bold;
+    }
+    p {
+        @include fonts(16);
+        font-weight: normal;
+        color: $text-bluish-gray;
+    }
+}

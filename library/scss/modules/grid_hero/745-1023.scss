@@ -1,0 +1,32 @@
+.grid-hero {
+    background: transparent url('../../img/grid/hero-bg.jpg') 50% 100% repeat-x;
+    border-bottom: 1px solid $bg-light-gray;
+}
+.grid-hero-content {
+    @include clearfix();
+    width: 100%;
+    max-width: 1200px;
+    height: 215px;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+        @include center-center();
+        width: 455px;
+        font-family: $reader-regular;
+        z-index: 200;
+        sup {
+            top: 0.3em;
+        }
+    }
+    .grid-hero-left-img {
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        z-index: 100;
+    }
+    .grid-hero-right-img {
+        float: right;
+        margin: 25px 40px 0 0;
+        z-index: 100;
+    }
+}

@@ -1,0 +1,102 @@
+.beverages-hero {
+	.facebook-link {
+		background: transparent url('../../../library/img/global/facebook.png');
+		width: 32px;
+		height: 32px;
+		display: block;
+		margin-bottom: 3px;
+	}
+	.twitter-link { 
+		background: transparent url('../../../library/img/global/twitter.png');
+		width: 32px;
+		height: 32px;
+		display: block;
+		margin-bottom: 3px;
+	}
+	.gplus-link {
+		background: transparent url('../../../library/img/global/gplus.png');
+		width: 32px;
+		height: 32px;
+		display: block;
+		margin-bottom: 3px;
+	}
+	.drinkmaker-machine {
+		@include fonts(12);
+		color: $off-black;
+		img {
+			margin-right: 8px;
+		}
+	}
+	h3 {
+		font-family: $reader-regular;
+		@include fonts(24);
+		color: $off-black;
+	}
+	h4 {
+		font-family: $reader-medium;
+		@include fonts(14);
+		color: $text-bluish-gray;
+	}
+	.specifics {
+		font-family: $reader;
+		@include fonts(12);
+		line-height: 20px;
+		color: $off-black;
+		margin: 0;
+	}
+	.detail-content {
+		color: $text-bluish-gray;
+		overflow: hidden;
+		height: 30px;
+		sup {
+			line-height: 10px;
+		}
+		&.long {
+			height: auto;
+		}
+	}
+	.readmore {
+		font-family: $reader-medium;
+		@include fonts(14);
+		color: $text-bluish-gray;
+		text-decoration: underline;
+		display: block;
+		margin-top: -20px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.nutrition {
+		color: $off-black;
+	}
+	sup {
+		position: relative;
+		top: 3px;
+		left: 0;
+	}
+	.main-img {
+		margin-top: 45px;
+	}
+	.hero-top {
+		margin-bottom: 100px;
+	}
+	.img-details {
+		margin-left: 0;
+		li {
+			display: inline-block;
+			margin-right: 3px;
+		}
+	}
+	.social-media-links {
+		margin-top: 160px;
+	}
+}
+.tooltip {
+  background: $white;
+  border: 2px solid $dark-gray2;
+  border-radius: 3px;
+  > .nub {
+    border: solid 6px;
+    border-color: transparent transparent $dark-gray2 transparent;
+    top: -14px;}
+}

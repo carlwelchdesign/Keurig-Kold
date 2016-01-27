@@ -1,0 +1,47 @@
+h1 {
+	line-height: 54px;
+}
+h2 {
+	font-family: $reader-regular;
+	color: $off-black;
+	line-height: 44px;
+	font-weight: normal;
+}
+.body1 {
+	color: $dark-gray1;
+	@include fonts(16);
+	line-height: 23px;
+	font-weight: normal;
+}
+.body2,
+.body3 {
+	color: $off-black;
+	@include fonts(14);
+	line-height: 22px;
+	font-weight: normal;
+}
+.body3 {
+	color: $dark-gray2;
+}
+.italic {
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.hilite {
+    color: $arctic-blue;
+}
+a.hilite:hover {
+    color: $accent-blue;
+}
+.block {
+    display: block;
+}
+sup {
+    position: relative;
+    top: -0.2em;
+}

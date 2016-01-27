@@ -1,0 +1,38 @@
+.quote {
+    padding: 30px 40px 50px;
+    @include radial-gradient($blue-gradient-start, $blue-gradient-end);
+    color: white;
+    text-align: center;
+    border-bottom: 3px solid white;
+    font-family: $reader-regular;
+    letter-spacing: 1px;
+    .quote-text {
+        position: relative;
+        padding: 0 40px;
+        margin-bottom: 18px;
+        &:before,
+        &:after {
+            position:absolute;
+            width: 14px;
+            height: 13px;
+            display: inline-block;
+            content: ' ';
+            background: transparent url($quote-start) 0 0 no-repeat;
+            background-size: 100%;
+        }
+        &:before {
+            //margin-right: 26px;
+            left: 0;
+            top: 0;
+        }
+        &:after {
+            right: 0;
+            bottom: 4px;
+            margin-left: 8px;
+            background-image: url($quote-end);
+        }
+    }
+    .quote-author {
+        margin-bottom: 0;
+    }
+}

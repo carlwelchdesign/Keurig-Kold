@@ -1,0 +1,6 @@
+.grid-hero-content {
+    h1 {
+        left: 447px;
+        @include vertical-middle();
+    }
+}

@@ -1,0 +1,43 @@
+/* Custom radio and checkbox input */
+input[type=checkbox],
+input[type=radio] {
+    display: none;
+}
+input[type=checkbox] + label,
+input[type=radio] + label {
+    position: relative;
+    padding-left: 45px;
+}
+input[type=checkbox] + label:before,
+input[type=radio] + label:before {
+    content: ' ';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid $arctic-blue;
+}
+input[type=radio] + label:before {
+    @include border-radius(50%);
+}
+input[type=checkbox]:checked + label:before,
+input[type=radio]:checked + label:before {
+    border: 2px solid $arctic-blue;
+    color: $arctic-blue;
+}
+input[type=checkbox]:checked + label:after,
+input[type=radio]:checked + label:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 5px;
+    background-color: $arctic-blue;
+}
+input[type=radio]:checked + label:after {
+    @include border-radius(50%);
+}

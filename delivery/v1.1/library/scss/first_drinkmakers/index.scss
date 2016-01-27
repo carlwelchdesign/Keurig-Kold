@@ -1,0 +1,24 @@
+// Configuration
+@import '../config/index.scss';
+
+// Dependencies
+@media screen and (min-width:768px) {
+    @import '745-1023.scss'
+}
+@media screen and (min-width:960px) {
+    @import '1024-1199.scss'
+}
+@media screen and (min-width:1200px) {
+    @import '1200.scss'
+}
+
+// Required components
+@import '../modules/drinkmaker_shop/index.scss';
+@import '../modules/rtbs/index.scss';
+@import '../modules/support/index.scss';
+@import '../modules/techspecs/index.scss';
+@import '../modules/videoplayer/index.scss';
+@import '../modules/recommendation/index.scss';
+@import '../modules/beta_cta/index.scss';
+@import '../modules/email_signup/index.scss';
+@import '../modules/anchorlinks/index.scss';

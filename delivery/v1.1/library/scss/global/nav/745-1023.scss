@@ -1,0 +1,352 @@
+.nav-ad,
+.nav {
+    > .columns {
+        padding: 0;
+    }
+}
+.nav-ad {
+    margin: 0 auto;
+    background-color: $dark-gray2;
+    p {
+        padding: 10px;
+        margin-bottom: 0;
+        text-align: center;
+        color: white;
+        @include fonts(12);
+        font-family: $reader-regular;
+    }
+    a {
+        color: white;
+    }
+    .ad-link:before {
+        display: inline-block;
+        content: '>';
+        padding: 0 3px 0 15px;
+    }
+    &.ad-kold {
+        background-color: $arctic-blue;
+    }
+    .columns {
+        border-left: 1px solid white;
+        &:first-child {
+            border-left: none;
+        }
+    }
+}
+.nav {
+    margin: auto;
+    position: relative;
+    padding-bottom: 0;
+    border-bottom: 1px solid $off-white;
+    .keurig-logo {
+        display: block;
+        height: 32px;
+        margin: 28px 0 32px $m-spacing;
+        padding: 0;
+        overflow: hidden;
+    }
+}
+.nav .sub-nav {
+    overflow: visible;
+}
+.sub-nav dd {
+    margin: 0;
+    a {
+        padding: 0;
+        color: $dark-gray2;
+        @include fonts(14);
+        font-family: $reader-regular;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &:first-child a:after {
+        content: '|';
+        display: inline-block;
+        margin: 0 10px;
+        color: $light-gray;
+    }
+    &.sub-nav-shopping-cart a {
+        display: block;
+        height: 0;
+        margin-right: $m-spacing;
+        padding: 40px 0 0;
+        width: 40px;
+        margin-left: 50px;
+        overflow: hidden;
+        position: relative;
+        top: -10px;
+        background: transparent url($icon-shopping-cart) 50% 50% no-repeat;
+        &:hover {
+            background-image: url($icon-shopping-cart-active);
+        }
+    }
+}
+.secondary-nav,
+.nav-search {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.nav-search {
+    top: auto;
+    bottom: 0;
+    .search-box {
+        float: right;
+        @include clearfix();
+        height: 55px;
+        width: 85%;
+        padding: 0;
+    }
+    input[type=text],
+    button {
+        height: 35px;
+        margin-bottom: 0;
+        padding: 0 17px;
+        background-color: $off-white;
+        font-family: $reader-regular;
+        @include fonts(14);
+        color: $dark-gray2;
+        border: 1px solid $off-white;
+        @include remove-outlines();
+        float: left;
+    }
+    input[type=text] {
+        @include border-radius(17px 0 0 17px);
+        @include placeholder-color( $dark-gray2 );
+        @include drop-shadow( none );
+        @include borderbox();
+        width: -webkit-calc(100% - 55px);
+        width: calc(100% - 55px);
+    }
+    button {
+        @include border-radius(0 17px 17px 0);
+        background-image: url($search-btn);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        width: 45px;
+        margin-right: 0;
+        &:focus,
+        &:hover {
+            background-color: $off-white;
+            background-image: url($search-btn-active);
+        }
+    }
+}
+
+.top-bar-section li:not(.has-form) a.kold-link:not(.button) {
+    .hilite {
+        font-family: $reader-medium;
+    }
+    &:hover {
+        color: $arctic-blue;
+    }
+}
+/* Dropdowns */
+.top-bar-section .f-dropdown,
+.nav-search .f-dropdown {
+    @include clearfix();
+    overflow: visible;
+    width: 100%;
+    margin-top: 1px;
+    z-index: $nav-dropdowns;
+    &.content {
+        @include bg-gradient(white, $bg-light-gray);
+        @include drop-shadow(5px 5px 8px 0px rgba(0,0,0,0.5));
+    }
+}
+.top-bar-section .f-dropdown {
+    h3 {
+        margin: 0 0 2px;
+        @include fonts(16);
+        line-height: 18px;
+        a {
+            font-family: $reader-medium;
+            color: $off-black;
+            display: inline-block;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    h4 {
+        margin: 0;
+    }
+    li:not(.has-form) a:not(.button) {
+        padding: 0 0 0 $m-spacing;
+        line-height: 24px;
+        color: $off-black;
+        @include fonts(12);
+        //white-space: nowrap;
+    }
+    li:not(.has-form) h4 a:not(.button) {
+        @include fonts(10); 
+        color: $dark-gray2; 
+    }
+    ul li {
+        float: none;
+        > a:hover {
+            text-decoration: underline;
+        }
+    }
+    .nav-dropdown-img {
+        text-align: center;
+    }
+    .cols {
+        @include clearfix();
+        @include borderbox();
+        border-left: 1px solid $border-light-gray;
+        height: 100%;
+        padding-bottom: 20px;
+        float: left;
+        ul {
+            @include borderbox();
+        }
+        &.cols-1 ul {
+            width: -webkit-calc(100% -25px);
+            width: calc(100% -25px);
+            float: left;
+        }
+        &.cols-2 ul {
+            width: -webkit-calc(50% - 25px);
+            width: calc(50% - 25px);
+            float: left;
+        }
+        &.cols-2 ul:last-child {
+            width: -webkit-calc(50% + 25px);
+            width: calc(50% + 25px);
+        }
+        &.nav-col-shop-kold.cols-2 ul,
+        &.nav-col-shop-kold.cols-2 ul:last-child {
+            width: 50%;
+        }
+    }
+    .cols:first-child {
+        border-left: none;
+    }
+}
+#content1Drop {
+    max-width: $width-drop-shop * 1px;
+    .nav-col-shop-beverages {
+        width: $nav-col-shop-beverages;
+    }
+    .nav-col-shop-brewers {
+        width: $nav-col-shop-brewers;
+    }
+    .nav-col-shop-kold {
+        width: $nav-col-shop-kold;
+    }
+    .nav-col-shop-accessories {
+        width: $nav-col-shop-accessories;
+    }
+}
+#content2Drop {
+    max-width: $width-drop-beverages * 1px;
+    .nav-col-beverages-pods {
+        width: $nav-col-beverages-pods;
+    }
+    .nav-col-beverages-brewers {
+        width: $nav-col-beverages-brewers;
+    }
+    .nav-col-beverages-kold {
+        width: $nav-col-beverages-kold;
+    }
+}
+#content3Drop {
+    max-width: $width-drop-brewers * 1px;
+    .nav-col-brewers-appliances {
+        width: $nav-col-brewers-appliances;
+    }
+}
+#content4Drop {
+    max-width: $width-drop-kold * 1px;
+    .nav-col-kold-drinkmaker {
+        width: $nav-col-kold-drinkmaker;
+    }
+    .nav-col-kold-beverages {
+        width: $nav-col-kold-beverages;
+    }
+}
+#content5Drop {
+    max-width: $width-drop-support * 1px;
+    .nav-col-support {
+        width: $nav-col-support;
+        ul {
+            width: 56%;
+            float: left;
+        }
+        ul:last-child {
+            width: 44%;
+        }
+    }
+}
+.autofill-search,
+.featured-search {
+    padding: 0 30px 5px;
+    a:hover,
+    a:hover .search-text {
+        text-decoration: underline;
+    }
+}
+.nav-search .f-dropdown {
+    h4 {
+        @include fonts(10); 
+        color: $dark-gray2; 
+        margin: 0 0 15px;
+    }
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @include fonts(12);
+        font-family: $reader-regular;
+    }
+    li {
+        @include clearfix();
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .search-img {
+        width: 48px;
+        display: inline-block;
+        margin: 0 20px 0 0;
+        text-align: center;
+        float: left;
+        clear: left;
+    }
+    .search-text {
+        @include vertical-middle();
+    }
+    .featured-search .hilite {
+        display: inline-block;
+        padding-right: 10px;
+        float: left;
+    }
+    .autofill-search {
+        display: none;
+    }
+}
+.f-dropdown .search-suggestions li a {
+    color: $dark-gray2;
+    .autofill-hilite {
+        color: $off-black;
+    }
+}
+.f-dropdown .featured-search li a {
+    color: $off-black;
+}
+.search-suggestions,
+.search-related {
+    float: left;
+}
+.search-suggestions {
+    width: 33.333%;
+}
+.search-related {
+    width: -webkit-calc(66.666% - 20px);
+    width: calc(66.666% - 20px);
+    padding-left: 20px;
+    border-left: 1px solid $border-light-gray;
+}

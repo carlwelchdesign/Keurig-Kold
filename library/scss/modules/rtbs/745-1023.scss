@@ -1,0 +1,29 @@
+.rtbs-block {
+	padding: 20px 50px;
+}
+.img-identifier {
+	font-family: $reader-medium;
+	@include fonts(45);
+	color: $dark-gray2;
+	margin-bottom: 0;
+	line-height: 48px;
+}
+.img-info {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 50px;
+	line-height: 18px;
+}
+sup {
+	position: relative;
+	top: 3px;
+	left: 0;
+}
+.reg {
+	font-size: 0.7em;
+	top: 1px;
+}
+.disclaimer {
+	padding-bottom: 0;
+	margin-bottom: 5px;
+}

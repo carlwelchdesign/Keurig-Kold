@@ -1,0 +1,53 @@
+.drinks {
+	height: 375px;
+	.drink-link {
+		height: 100%;
+		display: block;
+		img {
+			margin-bottom: 10px;
+		}
+		.shop-drink {
+			font-family: $reader-medium;
+			color: $white;
+			@include fonts(16);
+			line-height: 22px;
+			font-weight: normal;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding-left: 20px;
+			margin-left: -20px;
+			background: transparent url('../../../library/img/global/link-arrow-icon-light.png') no-repeat 35% 4px;
+		}
+		&:hover {
+			.shop-drink {
+				text-decoration: underline;
+				color: $white;
+				background: transparent url('../../../library/img/global/link-arrow-icon-light.png') no-repeat 35% 4px;
+			}
+		}
+	}
+	.coke {
+		background: $coca-cola;
+		height: 100%;
+	}
+	.red-barn {
+		background: $red-barn;
+		height: 100%;
+	}
+	.tierneys {
+		background: $tierneys-iced-tea;
+		height: 100%;
+	}
+	.canada-dry {
+		background: $canada-dry;
+		height: 100%;
+	}
+	.waterful {
+		background: $waterful;
+		height: 100%;
+	}
+	.flyte {
+		background: $flyte-red;
+		height: 100%;
+	}
+}

@@ -1,0 +1,12 @@
+// Configuration
+@import '../config/index.scss';
+
+// Dependencies
+@import 'default.scss';
+
+// Required components
+@import '../modules/hero/index.scss';
+@import '../modules/taster_program/index.scss';
+@import '../modules/taster_details/index.scss';
+@import '../modules/reserve_spot_intro_mobile/index.scss';
+@import '../modules/reserve_spot_mobile/index.scss';

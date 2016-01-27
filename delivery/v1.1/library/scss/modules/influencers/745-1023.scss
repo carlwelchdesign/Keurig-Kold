@@ -1,0 +1,68 @@
+.influencers {
+	padding: 0;
+	.influencers-single {
+		background: transparent url('../../../library/img/modules/influencers/faded-background.jpg') no-repeat center;
+		height: 300px;
+		h3 {
+			color: $white;
+			font-family: $reader-regular;
+			@include fonts(30);
+			line-height: 36px;
+		}
+		.quote {
+			@include fonts(100);
+			font-family: $reader-regular;
+			color: $white;
+			opacity: 0.5;
+			position: relative;
+			top: 0;
+			line-height: 80px;
+			height: 80px;
+		}
+		.quote-left {
+			top: 15px;
+			left: 0;
+		}
+		.quote-right {
+			top: 90px;
+			right: 0;
+		}
+		.influencers-content {
+			padding-top: 50px;
+		}
+	}
+	.influencers-double {
+		background: transparent url('../../../library/img/modules/influencers_double/faded-background-double.jpg') no-repeat center;
+		height: 300px;
+		&:first-child {
+			border-right: 1px solid #68bce8;
+		}
+		h3 {
+			color: $white;
+			font-family: $reader-regular;
+			@include fonts(18);
+			line-height: 24px;
+		}
+		.quote {
+			@include fonts(60);
+			font-family: $reader-regular;
+			color: $white;
+			opacity: 0.5;
+			position: relative;
+			top: 0;
+			line-height: 70px;
+			height: 70px;
+		}
+		.quote-left {
+			top: 0;
+			left: 0;
+		}
+		.quote-right {
+			top: 90px;
+			right: 0;
+		}
+		.influencers-content {
+			padding: 60px 0 0 0;
+		}
+	}
+}

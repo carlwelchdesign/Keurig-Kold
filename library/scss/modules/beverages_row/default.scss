@@ -1,0 +1,34 @@
+.drinks {
+    margin: 0 15px !important;
+    .columns {
+        padding: 0 7px;
+    }
+	.drink-link {
+		height: 100%;
+		display: block;
+		img {
+			margin-bottom: 10px;
+		}
+		.shop-drink {
+			display: none;
+		}
+	}
+	.coke {
+		background: $coca-cola;
+	}
+	.red-barn {
+		background: $red-barn;
+	}
+	.tierneys {
+		background: $tierneys-iced-tea;
+	}
+	.canada-dry {
+		background: $canada-dry;
+	}
+	.waterful {
+		background: $waterful;
+	}
+	.flyte {
+		background: $flyte-red;
+	}
+}

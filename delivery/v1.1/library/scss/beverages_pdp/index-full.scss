@@ -1,0 +1,17 @@
+// Configuration
+@import '../config/index.scss';
+
+// Dependencies
+
+@import '745-1023.scss';
+@import '1024-1199.scss';
+@import '1200.scss';
+
+// Required component
+@import '../modules/recommendation/index-full.scss';
+@import '../modules/email_signup/index-full.scss';
+@import '../modules/anchorlinks/index-full.scss';
+@import '../modules/brandpromotion/index-full.scss';
+@import '../modules/about_pods/index-full.scss';
+@import '../modules/beverages_hero/index-full.scss';
+@import '../modules/recipes/index-full.scss';

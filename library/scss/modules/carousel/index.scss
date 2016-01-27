@@ -1,0 +1,60 @@
+.carousel-item {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.carousel-item .item1 a.kold-learn-more {
+	position: absolute;
+	top: 123px;
+	left: 230px;
+	background-position: 0 4px;
+}
+.carousel-item .item1 a.kold-learn-more:hover {
+	background-position: 0 4px;
+}
+.carousel-item .item2 .exclusive {
+	font-size: 14px;
+  	font-size: 0.875rem;
+	font-family: 'Reader Bold';
+	line-height: 22px;
+	position: absolute;
+	top: 76px;
+	left: 40%;
+	color: #ed9043;
+	text-transform: uppercase;
+}
+.carousel-item .item2 .secondary-header {
+  	font-size: 44px;
+  	font-size: 2.75rem;
+	font-family: 'Reader Medium';
+	line-height: 50px;
+	color: #ffffff;
+	position: absolute;
+	top: 117px;
+	left: 27%;
+}
+.carousel-item .item2 .body-copy {
+  	font-size: 18px;
+  	font-size: 1.125rem;
+	font-family: 'Reader Bold';
+	line-height: 22px;
+	color: #ffffff;
+	position: absolute;
+	top: 180px;
+	left: 31%;
+}
+.carousel-item .item2 .body-copy .specifics {
+	color: #ffaf00;
+}
+.carousel-item .item2 .button {
+	background-color: #ffffff;
+	color: #1e1e1e;
+	padding: 20px 30px;
+	display: block;
+	position: absolute;
+	top: 263px;
+	left: 42%;
+	text-transform: uppercase;
+	@inlcude fonts(15);
+	font-family: 'Reader Bold';
+}

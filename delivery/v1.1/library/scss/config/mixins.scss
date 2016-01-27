@@ -1,0 +1,121 @@
+@mixin borderbox() {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin drop-shadow($arguments) {
+    box-shadow: $arguments;
+}
+@mixin border-radius($arguments) {
+    -webkit-border-radius: $arguments;
+    -moz-border-radius: $arguments;
+    border-radius: $arguments;
+}
+/* extends the parent div to the entire height when all child elements are floated */
+@mixin clearfix() {
+    &:after {
+        content: " "; // 1
+        display: table; // 2
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin fonts($sizeValue) {
+    font-size: $sizeValue + px;
+    font-size: ($sizeValue / 16) + rem;
+}
+@mixin bg-gradient($first, $second) { 
+    background: $first; /* Old browsers */
+    background: -moz-linear-gradient(top, $first 0%, $second 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$first), color-stop(100%,$second)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, $first 0%,$second 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $first 0%,$second 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $first 0%,$second 100%); /* IE10+ */
+    background: linear-gradient(to bottom, $first 0%,$second 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$first}', endColorstr='#{$second}',GradientType=0 );
+}
+/* removes outlines from form elements */
+@mixin remove-outlines() {
+    -webkit-outline: none;
+    -moz-outline: none;
+    -ms-outline: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+/* adds text color to input placeholder text */
+@mixin placeholder-color( $clr ) {
+    &::-webkit-input-placeholder { color: $clr; }
+    &:-moz-placeholder { color: $clr; opacity: 1; } /* firefox 18- */
+    &::-moz-placeholder { color: $clr; opacity: 1; } /* firefox 19+ */
+    &:-ms-input-placeholder { color: $clr; } /* ie */
+}
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+@mixin translateY($y) {
+    -webkit-transform: translateY($y);
+    -moz-transform: translateY($y);
+    -ms-transform: translateY($y);
+    -o-transform: translateY($y);
+    transform: translateY($y);
+}
+@mixin translateX($x) {
+    -webkit-transform: translateX($x);
+    -moz-transform: translateX($x);
+    -ms-transform: translateX($x);
+    -o-transform: translateX($x);
+    transform: translateX($x);
+}
+@mixin rotate($x) {
+    -webkit-transform: rotate(#{$x}deg);
+    -moz-transform: rotate(#{$x}deg);
+    -ms-transform: rotate(#{$x}deg);
+    -o-transform: rotate(#{$x}deg);
+    transform: rotate(#{$x}deg);
+}
+/* centers content vertically and horizonally; requires the parent element to be relative positioned */
+@mixin center-center() {
+    top:50%;
+    left:50%;
+    position:absolute;
+    @include translate(-50%,-50%);
+}
+/* centers content vertically; requires the parent element to be relative positioned */
+@mixin vertical-middle() {
+    top:50%;
+    position:absolute;
+    @include translateY(-50%);
+}
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+/* More flexbox mixins at this github repo https://github.com/mastastealth/sass-flex-mixin/blob/master/_flexbox.scss */
+@mixin flex-display {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin flex-flow($values: (row nowrap)) {
+	// No Webkit Box fallback.
+	-webkit-flex-flow: $values;
+	-moz-flex-flow: $values;
+	-ms-flex-flow: $values;
+	flex-flow: $values;
+}
+@mixin flex-grow($int: 0) {
+	-webkit-box-flex: $int;
+	-webkit-flex-grow: $int;
+	-moz-flex-grow: $int;
+	-ms-flex-positive: $int;
+	flex-grow: $int;
+}

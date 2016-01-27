@@ -1,0 +1,36 @@
+.touch {
+	.mixed-media-viewer {
+		#s7viewer {
+			margin: 0 0 120px 0;
+		}
+		#s7viewer_spinLeftButton {
+			top: 125px;
+		}
+		#s7viewer_spinRightButton {
+			top: 125px;
+		}
+		#s7viewer_swatches {
+			bottom: -130px;
+		}
+		#s7viewer_setIndicator {
+			top: 475px !important;
+		}
+	}
+}
+.mixed-media-viewer {
+	#s7viewer {
+		margin: 15px 0 20px 0;
+	}
+	#s7viewer_spinLeftButton {
+		top: 25px;
+	}
+	#s7viewer_spinRightButton {
+		top: 25px;
+	}
+	#s7viewer_swatches {
+		bottom: -20px;
+	}
+	#s7viewer_setIndicator {
+		top: 325px !important;
+	}
+}

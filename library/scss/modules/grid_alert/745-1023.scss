@@ -1,0 +1,14 @@
+.grid-content .grid-alert {
+    background-color: $dark-gray2;
+    @include border-radius(5px);
+    margin-bottom: 15px;
+    p {
+        padding: 10px 20px;
+        color: white;
+        @include fonts(14);
+    }
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+}

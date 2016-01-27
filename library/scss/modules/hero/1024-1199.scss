@@ -1,0 +1,13 @@
+.hero-lp-copy {
+    width: calc-percent(465, 1200);
+    &.copy-left {
+        margin: 0 0 0 calc-percent(110, 1200);
+        p {
+            padding-right: 105px;
+        }
+    }
+    &.copy-right {
+        right: calc-percent(50, 1200);
+        margin-top: 20px;
+    }
+}

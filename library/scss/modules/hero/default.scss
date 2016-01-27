@@ -1,0 +1,25 @@
+.hero-lp {
+    position: relative;
+    padding-top: calc-percent(300, 640);
+}
+.hero-lp-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero-lp-copy {
+    padding: 26px 32px;
+    text-align: center;
+    h1 {
+        @include fonts(22);
+        line-height: 24px;
+        font-family: $reader-regular;
+        margin-bottom: 20px;
+    }
+    p {
+        @include fonts(14);
+        line-height: 19px;
+        font-family: $reader-regular;
+        padding: 0 25px;
+    }
+}

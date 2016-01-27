@@ -1,0 +1,66 @@
+.youll-also-like {
+	.accessories-container {
+		width: 100%;
+		margin: 70px auto 40px auto;
+	}
+	.item-container {
+		display: inline-block;
+		vertical-align: top;
+		.item {
+			display: inline-block;
+			&:hover{
+				.item-link {
+					text-decoration: underline;
+				}
+			}
+			.item-link {
+				font-family: $reader-medium;
+				@include fonts(16);
+				color: $off-black;
+				margin-top: 30px;
+				display: block;
+			}
+		}
+	}
+	.explore-accessories {
+		margin-bottom: 5px;
+		display: inline-block;
+	}
+	&.five-items {
+		.item-container {
+			width: 19%;
+		}
+	}
+	&.four-items {
+		.accessories-container {
+			width: 85%;
+		}
+		.item-container {
+			width: 24%;
+		}
+	}
+	&.three-items {
+		.accessories-container {
+			width: 76%;
+		}
+		.item-container {
+			width: 26%;
+		}
+	}
+	&.two-items {
+		.accessories-container {
+			width: 75%;
+		}
+		.item-container {
+			width: 25%;
+		}
+	}
+	&.one-items {
+		.accessories-container {
+			width: 100%;
+		}
+		.item-container {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+.reserve-spot-mobile {
+    background: $accent-blue;
+    text-align: center;
+    color: white;
+    &.columns {
+        padding: 0 30px;
+    }
+    h2 {
+        margin: 25px 0;
+        color: white;
+        @include fonts(18);
+    }
+    sup {
+        top: 0.2em;
+    }
+    p {
+        @include fonts(12);
+        margin: 0 0 25px;
+    }
+    p.phone-num {
+        font-family: $reader-medium;
+        @include fonts(18);
+        a {
+            color: white;
+            padding-left: 22px;
+            position: relative;
+            &:before {
+                display: block;
+                content: ' ';
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 3px;
+                left: 0;
+                background: transparent url($icon-phone) 50% 50% no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+    input[type=text],
+    input[type=email] {
+        @include border-radius(17px);
+        border: 1px solid $border-gray;
+        @include placeholder-color( $dark-gray2 );
+        padding: 10px 15px;
+    }
+    .error {
+        border: 2px solid red;
+        @include border-radius(17px);
+    }
+    .primary-cta-light {
+        width: 100%;
+    }
+    .email-form-cta {
+        margin: 0 -15px;
+    }
+    .separator {
+        margin: 0 0 25px;
+        position: relative;
+        font-family: $reader-medium;
+        @include fonts(12);
+        font-weight: 700;
+        &:before {
+            display: block;
+              content: ' ';
+              width: 100%;
+              height: 0;
+              border-bottom: 1px solid white;
+              position: absolute;
+              top: 12px;
+        }
+        span {
+            position: relative;
+            background-color: $accent-blue;
+            padding: 0 8px;
+        }
+    }
+}

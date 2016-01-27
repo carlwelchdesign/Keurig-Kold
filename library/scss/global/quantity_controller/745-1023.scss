@@ -1,0 +1,25 @@
+/* Custom quantity controller */
+.decrease,
+.increase {
+    cursor: pointer;
+    @include border-radius(50%);
+    border: 1px solid $dark-gray2;
+    color: $dark-gray2;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.qtyProd {
+    font-family: $reader-regular;
+    @include fonts(18);
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    position: relative;
+    top: -5px;
+    @include remove-outlines();
+}

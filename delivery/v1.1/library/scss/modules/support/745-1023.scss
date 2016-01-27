@@ -1,0 +1,32 @@
+.support {
+	background: transparent url('../../../img/modules/support/support-background.png') no-repeat center;
+	height: 300px;
+	&.modules {
+		padding: 41px 15px 0 15px;
+	}
+	h2, 
+	p {
+		color: $white;
+	}
+	sup{
+		font-size: .7em;
+		font-weight: 100;
+	}
+	.title {
+		line-height: 34px;
+	}
+	.tagline { 
+    	margin-bottom: 44px;
+    	font-weight: 100;
+	}
+	.support-link {
+		margin-top: 10px;
+	}
+	.call-us {
+		margin-top: 50px;
+		font-family: $reader;
+		.bold {
+			font-family: $reader-bold;
+		}
+	}
+}

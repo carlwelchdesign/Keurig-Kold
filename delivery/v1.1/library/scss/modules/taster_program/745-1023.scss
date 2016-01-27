@@ -1,0 +1,59 @@
+.tasterprogram {
+    &.modules {
+        padding-bottom: 0;
+    }
+    h2 {
+        text-align: center;
+        @include fonts(36);
+        padding-bottom: 55px;
+    }
+    p {
+        @include fonts(16);
+        line-height: 22px;
+    }
+    li a {
+        @include fonts(12);
+        display: block;
+        padding-bottom: 18px;
+    }
+    li a:before {
+        content: '>';
+        display: inline-block;
+        padding-right: 5px;
+    }
+    .perk {
+        margin-bottom: 100px;
+        position: relative;
+        @include clearfix();
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .taster-copy,
+        .img {
+            @include borderbox();
+            width: 50%;
+        }
+        .taster-copy {
+            @include vertical-middle();
+        }
+    }
+    .odd .taster-copy {
+        right: 0;
+    }
+    .odd .img {
+        float: left;
+    }
+    .even .img {
+        float: right;
+    }
+    .odd p,
+    .odd ul,
+    .even p,
+    .even ul,
+    .odd .img {
+        padding: 0 50px;
+    }
+    sup {
+        top: 0.2em;
+    }
+}

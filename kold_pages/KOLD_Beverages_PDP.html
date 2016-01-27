@@ -1,0 +1,63 @@
+<!--#set var="navAd" value="Default" -->
+<!--#set var="logState" value="LoggedOut" -->
+<!--#set var="anchorLinks" value="BeveragesPDP" -->
+
+<!--#include virtual="../kold_modules/base_layout/global-head.html" -->
+
+    <title>KOLD Beverages PDP Page</title>
+    
+    <!--#include virtual="../kold_modules/base_layout/global-styles.html" -->
+    
+    <!--[if (gt IE 8) | (IEMobile)]><!-->
+    <link rel="stylesheet" href="../library/css/beverages_pdp/index.css" type="text/css">      
+    <!--<![endif]--><!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="../library/css/beverages_pdp/index-full.css" type="text/css"> 
+    <![endif]-->
+    
+    <!--#include virtual="../kold_modules/base_layout/global-head-scripts.html" -->
+    
+  </head>
+  <body>
+
+    <!--#include virtual="../kold_modules/nav_ad/index.html" -->
+    <!--#include virtual="../kold_modules/nav/index.html" -->
+
+		<div class="row">
+			<!--#include virtual="../kold_modules/beverages_pdp_hero/index.html" -->
+		</div>
+		<div>
+			<!-- secondary nav here -->
+			<!--#include virtual="../kold_modules/anchorlinks/index.html" -->
+		</div>
+		<div class="row">
+			<!--#include virtual="../kold_modules/recommendation/index.html" -->
+			<!--#include virtual="../kold_modules/review/index.html" -->
+			<!--#include virtual="../kold_modules/about_pods/index.html" -->
+			<!--#include virtual="../kold_modules/beta_cta/index.html" -->
+			<!--#include virtual="../kold_modules/email_signup/index.html" -->
+		</div>
+    
+    <!--#include virtual="../kold_modules/footer/index.html" -->
+
+    <!--#include virtual="../kold_modules/base_layout/global-scripts.html" -->
+    <script>
+    	$(document).foundation({
+			"magellan-expedition": {
+			  active_class: 'active', // specify the class used for active sections
+			  threshold: 0, // how many pixels until the magellan bar sticks, 0 = auto
+			  destination_threshold: 0, // pixels from the top of destination for it to be considered active
+			  throttle_delay: 50, // calculation throttling to increase framerate
+			  fixed_top: 0, // top distance in pixels assigend to the fixed element on scroll
+			  offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
+			}
+		});
+    </script>
+    <script>
+    	$('.readmore').on('click', function(event){
+		    event.preventDefault();
+		    $(this).prev('.detail-content').toggleClass('long');
+		    $(this).text($(this).text() == "Read More" ? "Read Less" : "Read More");
+		});
+    </script>
+	</body>
+</html>

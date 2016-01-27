@@ -1,0 +1,6 @@
+$tile-img-left-xl: calc-percent(90, 896);
+.list-view {
+    .tile-img {
+        left: $tile-img-left-xl;
+    }
+}

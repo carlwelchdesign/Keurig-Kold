@@ -1,0 +1,83 @@
+.videoplayer{
+	padding: 50px 15px 0;
+	h2 {
+		margin-bottom: 15px;
+	}
+	p {
+		margin-bottom: 25px;
+	}
+	sup {
+		line-height: 14px;
+	}
+    .video-js {
+        width: 100%;
+        height: 0;
+        padding-bottom: calc-percent(580, 1200);
+        position: relative;
+        object {
+            width: 100%;
+            max-width: 1200px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+    
+/*
+HTML5 Video player
+---------------------------*/
+/*.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default .vjs-big-play-button:before {
+	font-size: 40px;
+	line-height: 40px;
+	margin: 36px 0 0 36px;
+}
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default.vjs-mouse .vjs-big-play-button {
+	width: 105px;
+	height: 105px;
+	top: 45%;
+	left: 45%;
+}
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default .vjs-big-play-button:hover {
+	box-shadow: none;
+	background: $arctic-blue;
+}
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default .vjs-big-play-button {
+	border-radius: 52px;
+}
+*/
+
+/*---*/
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default .vjs-big-play-button {
+	background: transparent;
+	border: 4px solid $diet-coke;
+	opacity: 0.8;
+	width: 85px;
+	height: 85px;
+	@include center-center();
+}
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default .vjs-big-play-button {
+	border-radius: 52px;
+}
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default.vjs-mouse .vjs-big-play-button {
+	width: 85px;
+	height: 85px;
+	@include center-center();
+}
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default .vjs-big-play-button:hover {
+	box-shadow: none;
+	border: 4px solid $arctic-blue;
+}
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default .vjs-big-play-button:before {
+	@include fonts(55);
+	line-height: 55px;
+	margin: 15px 0 0 19px;
+	opacity: 1;
+	color: $diet-coke;
+	box-shadow: none;
+}
+.bc-player-046d714b-2a49-4004-ad27-451595fd6d21_default .vjs-big-play-button:hover:before {
+	color: $arctic-blue;
+}

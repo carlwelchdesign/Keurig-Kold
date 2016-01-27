@@ -1,0 +1,122 @@
+.text-link {
+	font-family: $reader-regular;
+	color: $off-black;
+	@include fonts(14);
+	line-height: 22px;
+	text-decoration: underline;
+	font-weight: normal;
+	&:hover {
+		text-decoration: none;
+	}
+	&.text-light {
+		color: $white;
+	}
+}
+.kold .link {
+	font-family: $reader-medium;
+	color: $arctic-blue;
+	@include fonts(16);
+	line-height: 22px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-left: 20px;
+	background: transparent url('../../../library/img/global/link-arrow-icon.png') no-repeat 0 45%;
+	&:hover {
+		color: $accent-blue;
+		background: transparent url('../../../library/img/global/link-arrow-icon-hover.png') no-repeat 0 40%;
+	}
+}
+.link-light {
+	font-family: $reader-medium;
+	color: $white;
+	@include fonts(16);
+	line-height: 22px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-left: 20px;
+	background: transparent url('../../../library/img/global/link-arrow-icon-light.png') no-repeat 0 60%;
+	&:hover {
+		color: $light-blue;
+		background: transparent url('../../../library/img/global/link-arrow-icon-light-hover.png') no-repeat 0 60%;
+	}
+}
+.primary-cta {
+	font-family: $reader-medium;
+	@include fonts(13);
+	line-height: 50px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 50px;
+	width: auto;
+	padding: 0 30px;
+	border: none;
+	display: inline-block;
+}
+.kold .primary-cta {
+	color: $white;
+	background-color: $arctic-blue;
+	&:hover {
+		background-color: $accent-blue;
+	}
+}
+.primary-cta-light {
+	font-family: $reader-medium;
+	@include fonts(13);
+	line-height: 50px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 50px;
+	width: auto;
+	padding: 0 30px;
+	border: none;
+	display: inline-block;
+}
+.kold .primary-cta-light {
+	color: $arctic-blue;
+	background-color: $white;
+	&:hover {
+		color: $accent-blue;
+	}
+}
+.secondary-cta {
+	font-family: $reader-medium;
+	color: $off-black;
+	@include fonts(13);
+	line-height: 48px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 48px;
+	width: auto;
+	padding: 0 29px;
+	background-color: $white;
+	border: 1px solid $off-black;
+	display: inline-block;
+	&:hover {
+		color: $white;
+		background-color: $off-black;
+	}
+}
+.secondary-cta-light {
+	font-family: $reader-medium;
+	color: $dark-gray2;
+	@include fonts(13);
+	line-height: 48px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 48px;
+	width: auto;
+	padding: 0 29px;
+	background-color: $white;
+	border: 1px solid $dark-gray2;
+	display: inline-block;
+	&:hover {
+		color: $white;
+		background-color: $dark-gray2;
+	}
+}

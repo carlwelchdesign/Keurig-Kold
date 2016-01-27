@@ -1,0 +1,28 @@
+.text-link {
+	@include fonts(14);
+	line-height: 22px;
+}
+.kold .link {
+	@include fonts(16);
+	line-height: 22px;
+}
+.link-light {
+	@include fonts(16);
+	line-height: 22px;
+}
+.primary-cta {
+	@include fonts(14);
+	line-height: 50px;
+}
+.primary-cta-light {
+	@include fonts(14);
+	line-height: 50px;
+}
+.secondary-cta {
+	@include fonts(14);
+	line-height: 48px;
+}
+.secondary-cta-light {
+	@include fonts(14);
+	line-height: 48px;
+}

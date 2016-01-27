@@ -1,0 +1,39 @@
+.mini-cart-flyout {
+    color: $off-black;
+    font-family: $reader-regular;
+    @include fonts(15);
+    line-height: 18px;
+    header,
+    header + div,
+    .empty-popup-cart
+     {
+        @include fonts(17);
+        line-height: 17px;
+        font-family: $reader-regular;
+    }
+    .itemList {
+        .itemBrand {
+           font-family: $reader-medium;
+           @include fonts(15);
+           font-weight: bold; 
+        }
+        .itemName,
+        .itemQuantity,
+        .itemPrice {
+            @include fonts(15);
+            line-height: 18px;
+            font-family: $reader-regular;
+        }
+    }
+    .totals {
+        @include fonts(15);
+        font-family: $reader-regular;
+        color: $off-black;
+    }
+    .promotions {
+        @include fonts(15);
+        font-family: $reader-regular;
+        color: $off-black;
+    }
+}
+

@@ -1,0 +1,29 @@
+$tile-img-left-l: calc-percent(80, 896);
+$list-prod-name-width-l: calc-percent(268, $list-tile-width);
+$list-reg-price-width-l: calc-percent(75, $list-tile-width);
+$list-member-price-width-l: calc-percent(150, $list-tile-width);
+$list-prod-qty-width-l: calc-percent(101, $list-tile-width);
+$grid-prod-name-width-l: calc-percent(126, $grid-tile-width);
+$grid-reg-price-width-l: calc-percent(60, $grid-tile-width);
+$grid-member-price-width-l: calc-percent(60, $grid-tile-width);
+.list-view {
+    .tile-img {
+        left: $tile-img-left-l;
+    }
+    .prod-name {
+        width: $list-prod-name-width-l;
+        left: 0;
+    }
+    .reg-price {
+        width: $list-reg-price-width-l;
+        left: $list-prod-name-width-l;
+    }
+    .member-price {
+        width: $list-member-price-width-l;
+        left: $list-reg-price-width-l + $list-prod-name-width-l;
+    }
+    .prod-qty {
+        width: $list-prod-qty-width-l;
+        left: $list-reg-price-width-l + $list-prod-name-width-l + $list-member-price-width-l;
+    }
+}

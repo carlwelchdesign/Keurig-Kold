@@ -1,0 +1,16 @@
+// Configuration
+@import '../config/index.scss';
+
+// Dependencies
+
+@import '745-1023.scss';
+@import '1024-1199.scss';
+@import '1200.scss';
+
+// Required components
+@import '../modules/anchorlinks/index-full.scss';
+@import '../modules/hero/index-full.scss';
+@import '../modules/taster_program/index-full.scss';
+@import '../modules/taster_details/index-full.scss';
+@import '../modules/reserve_spot/index-full.scss';
+@import '../global/radio_checkboxes/index-full.scss';

@@ -1,0 +1,63 @@
+Download List Documentation
+
+The download list module was created to add selected items (from a select) to a list to be downloaded at a later time. Each item added to the download list will be added as a checkbox so that the user can choose which items them want to download from the download list.
+
+To create a download list, one needs:
+	-an unordered list on the page where the items will be added to
+	-a select element where you will be choosing your items from
+	-a submit button that is clicked when you are ready to add items to be downloaded later
+	-a span where we can keep track of the items that are added to be downloaded later
+
+You may give any of these elements the class name that you choose but they must be set up in a particular way. Specifically, the select element.
+The module must find the value of the select item and it will not if the markup is not correct. 
+
+It is important that when you are setting up the download list that you include specific data so that the download list will show the correct information.
+Each option in the select must have 3 data attributes: name, type and id. The data will be used to populate the download list. 
+
+The span that holds the number of items added to the download list may be put anywhere on the page as long as it has the class that you chose added to it.
+
+
+Here is an example of how the select and button markup should be created:
+
+<div class="js-select-container">
+    <select class="js-select">
+        <option data-id="option1-id" data-name="option1-name" data-type="option1-type">Option 1</option>
+        <option data-id="option2-id" data-name="option2-name" data-type="option2-type">Option 2</option>
+        <option data-id="option3-id" data-name="option3-name" data-type="option3-type">Option 3</option>
+    </select>
+</div>
+<div>
+  <div>
+    <button class="js-button" type="submit">Add</button>
+  </div>
+</div>
+
+*The button must have two container divs.
+*The select may have any amount of containers on it as long as the outter most container has the select container class.
+
+
+
+To instante the module on a page, here is the javascript:
+
+var DL = downloadList({
+    addButtons: '.js-button',
+    selectElem: '.js-select',
+    itemsContainer: '.js-items-container',
+    itemAmountElem: '.js-span-container',
+    selectContainerElem: '.js-select-container'
+});
+
+*Be sure to require the download list module at the top of the file that you are instanting the module in like so: 
+var downloadList = require('sapientModules/modules/download-list');
+
+
+
+When you add an item to the list the output will look like this:
+
+<ul class="js-select-container">
+    <li>
+        <input id="selectedItemsID" type="checkbox"  value="selectedItemsValue" checked>
+        <label for="selectedItemsID">selectedItemsValue</label>
+        <span>selectedItemsType</span>
+    </li>
+</ul>

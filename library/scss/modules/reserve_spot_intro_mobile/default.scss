@@ -1,0 +1,31 @@
+.reserve-spot-intro-mobile {
+    text-align: center;
+    .reserve-spot-intro p {
+        padding: 0 15px;
+    } 
+    ul {
+        margin: 25px 0;
+        padding: 0 15px;
+        list-style: none;
+        border-top: 1px solid $light-gray;
+        border-bottom: 1px solid $light-gray;
+    }
+    li {
+        @include clearfix();
+        list-style: none;
+        padding: 20px 0;
+    }
+    .left-col,
+    .right-col {
+        width: 50%;
+        float: left;
+        margin-bottom: 0;
+    }
+    .left-col {
+        text-align: left;
+    }
+    .right-col {
+        text-align: right;
+        float: right;
+    }
+}

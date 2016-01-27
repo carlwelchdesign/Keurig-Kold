@@ -1,0 +1,24 @@
+.nav .keurig-logo {
+    margin-left: $l-spacing;
+}
+.sub-nav dd.sub-nav-shopping-cart a {
+    width: 65px;
+}
+.nav-search {
+    .search-box {
+        width: 90%;
+    }
+    input[type=text] {
+        width: -webkit-calc(100% - 70px);
+        width: calc(100% - 70px);
+    }
+    button {
+        margin-right: $l-spacing;
+    }
+}
+.top-bar-section .f-dropdown {
+    li:not(.has-form) a:not(.button),
+    li:not(.has-form) h4 {
+        padding: 0 0 0 $l-spacing;
+    }   
+}

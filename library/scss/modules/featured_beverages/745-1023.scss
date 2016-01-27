@@ -1,0 +1,13 @@
+.featured-beverages {
+	&.modules {
+		padding: 0 15px;
+	}
+	.pod-options {
+		background: url('../../../library/img/modules/featured_beverages/featured-beverages.jpg') no-repeat center;
+		height: 350px;
+		h2 {
+			margin-top: 115px;
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,69 @@
+.recommendation {
+	.pods-container {
+		width: 100%;
+		margin: 50px auto 90px auto;
+	}
+	.beverage-container {
+		/*width: 120px;
+		height: 155px;*/
+		display: inline-block;
+		/*margin: 50px 50px 100px 50px;*/
+		vertical-align: top;
+		/*&.long-title {
+			width: 200px;
+			margin: 50px 10px 100px 10px;
+		}*/
+		.beverage {
+			display: inline-block;
+			&:hover{
+				.pod-link {
+					text-decoration: underline;
+				}
+			}
+			.pod-link {
+				font-family: $reader-medium;
+				@include fonts(16);
+				color: $off-black;
+				margin-top: 30px;
+				display: block;
+			}
+		}
+	}
+	&.five-beverages {
+		.beverage-container {
+			width: 19%;
+		}
+	}
+	&.four-beverages {
+		.pods-container {
+			width: 85%;
+		}
+		.beverage-container {
+			width: 24%;
+		}
+	}
+	&.three-beverages {
+		.pods-container {
+			width: 76%;
+		}
+		.beverage-container {
+			width: 26%;
+		}
+	}
+	&.two-beverages {
+		.pods-container {
+			width: 75%;
+		}
+		.beverage-container {
+			width: 25%;
+		}
+	}
+	&.one-beverages {
+		.pods-container {
+			width: 100%;
+		}
+		.beverage-container {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.about-pods {
+	background: url('../../../library/img/modules/about_pods/pods-background.jpg') no-repeat center;
+	height: 300px;
+	h2, p {
+		color: $white;
+	}
+	p a {
+		@include fonts(16);
+	}
+}
